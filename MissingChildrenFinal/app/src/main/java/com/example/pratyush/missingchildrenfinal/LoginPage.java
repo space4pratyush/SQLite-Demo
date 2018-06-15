@@ -8,19 +8,16 @@ import android.widget.Button;
 
 public class LoginPage extends AppCompatActivity {
 
-    Button toHome;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
-
-        toHome=findViewById(R.id.btnToHome);
-
-        toHome.setOnClickListener(new View.OnClickListener() {
+        Button signIn=findViewById(R.id.signIn);
+        signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(LoginPage.this, Home.class);
+
+                Intent intent=new Intent(LoginPage.this,Home.class);
                 startActivity(intent);
             }
         });

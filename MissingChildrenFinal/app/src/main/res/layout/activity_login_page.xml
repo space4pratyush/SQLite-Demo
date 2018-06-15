@@ -9,7 +9,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnToHome"
-        android:text="FacebookLogin"/>
+        android:text="Google SignIn"
+        android:id="@+id/signIn"/>
 
 </LinearLayout>
